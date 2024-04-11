@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"> </script>
+	<title>Login</title>
+	<link rel="stylesheet" href="/css/stylo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"> <i class="fa-solid fa-kiwi-bird"></i> vive-explorando </a>
+        </div>
+        <div class="nav">
+            <a href="/"> Home </a>
+            <a href="#"> About </a>
+            <a href="#"> Contact</a>
+            <a href="#"> Service </a>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <section class="section">
+        <div class="agregado">
+            <div class="welcome">
+                <h1> WELCOME </h1>
+                <h2> to the best website</h2>
+            </div>
+            <div class="lorem">
+                <pre> Any event that is within your reach can be located with us</pre>
+            </div>
+            <div class="icon">
+                <a href="#" class="ic"> <i class="fa-brands fa-facebook"> </i> </a>
+                <a href="#" class="ic"> <i class="fa-brands fa-instagram"> </i> </a>
+                <a href="#" class="ic"> <i class="fa-brands fa-twitter"> </i> </a>
+                <a href="#" class="ic"> <i class="fa-brands fa-github"> </i> </a>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="signin">
+                <h2> Login</h2>
+            <form action="auth" method="POST">
+            <div class="input">
+                <i class="fa-regular fa-envelope"> </i>
+                <input type="text" name="user" placeholder="user"autofocus required>
+                <label for="input"> Email </label>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-lock"> </i>
+                <input type="password" name="pass" placeholder="password" required>
+                <label for="pass"> Password </label>
+            </div>
+            <div class="check">
+                <label> <input type="checkbox"> Remember me </label>
+                <a href="#"> Forgot Password? </a>
+            </div>
+            <div class="button">
+                <input class="btn" type="submit" value="login">
+            </div>
+            </form>
+            <div class="account">
+                <p> Don't have an account </p>
+                <a href="register"  class="btn-register"> Sign up </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+   <% if (typeof alert != "undefined")  { %>
+    <script>
+    Swal.fire({
+      title:'<%= alertTitle %>',
+      text:'<%= alertMessage %>',
+      icon:'<%= alertIcon %>',
+      showConfirmButton: <%= showConfirmButton %>,
+      timer: <%= timer %>
+    }).then(()=>{
+      window.location='/<%= ruta %>'
+    })
+    </script>
+  <% } %>
+	</div>
+</body>
+</html>

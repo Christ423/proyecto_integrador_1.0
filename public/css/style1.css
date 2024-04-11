@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: url("https://png.pngtree.com/background/20230517/original/pngtree-images-for-wallpaper-wallpaper-galaxy-space-wallpaper-and-stars-picture-image_2639256.jpg") bottom / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .box{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(transparent,#050a1f);
+  }
+  
+  h1{
+    text-align: left;
+    margin: 0;
+    padding: 10px 0 0 50px;
+    color: aqua;
+  }
+  
+  a{
+    color: black;
+    border: 5px solid rgb(3, 21, 43);
+    border-radius:30px;
+    background: aqua;
+    padding: 10px 30px;
+    margin: 0;
+    margin-left: 1200px;
+    text-transform: uppercase;
+    text-decoration: none
+   
+  }
+  .world{
+    width: 350px;
+    height: 350px;
+    background: url("https://lh3.googleusercontent.com/proxy/141KlbrDtv4_-A6Zl1SCy-1g_-MaxI_Q__cZg83SNjwxEECDhvUN3vnl0i12tU_jvL6J9Qp-KDHdDUMAkWY_qaMcDmdI8DWbL4I-6SJKr6Opzx93gInnHtI1IXpSoGmrVw") top/ cover ;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 30px;
+    
+    animation: world 9s linear infinite;
+  }
+  
+  @keyframes world{
+    0%{
+        background-position-x: 0%;
+    }
+  
+    100%{
+        background-position-x: -800px;
+    }
+  }
